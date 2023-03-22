@@ -1,46 +1,100 @@
-* {
-  box-sizing: border-box;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-body {
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+li,
+aside,
+footer,
+nav,
+section  {
   margin: 0;
-  font-family: system-ui, sans-serif;
-  color: black;
-  background-color: white;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
 }
-
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  gap: 0.5rem;
-  border-bottom: solid 1px #aaa;
-  background-color: #eee;
+body {
+  background-color: #ff4ba7;
 }
-
-nav a {
-  display: inline-block;
-  min-width: 9rem;
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  border: solid 1px #aaa;
+nav,
+footer {
+  background-color: #fe3d6c
+}
+h1,
+h2,
+h3 {
+  color: #db2044;
+}
+main li :hover{
+  background-color: #ffda64
+}
+.navbar ul {
+  display: grid;
+  grid-template-columns : repeat(4, 100px);
+  grid-gap: 10px;
+  justify-content: right;
+  justify-items: center;
+  font-size: 1.5em;
+}
+.hero {
   text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 5em;
+}
+
+.hero-text h2 {
+  font-size: 1.5em;
+}
+.drinks {
+  background-color: #e233b8;
+  padding-bottom: 60px;
+}
+.drinks h2 {
+  font-size: 3em;
+}
+ul {
+  list-style-type: none;
+}
+.drinks li {
+  padding-top: 40px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+nav a {
+  color: white;
   text-decoration: none;
-  color: #555;
 }
-
-nav a[aria-current='page'] {
-  color: #000;
-  background-color: #d4d4d4;
+footer {
+  padding-top: 20px;
+  height: 50px;
+  color: white;
+  text-align: center;
 }
-
-main {
-  padding: 1rem;
+.hero {
+  text-align: center;
 }
-
-h1 {
-  font-weight: bold;
-  font-size: 1.5rem;
+.drinks li {
+  border-top: 1px dotted white;
+  padding-top: 40px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+h3.beverage {
+  font-size: 1.5em;
+}
+.beverage::before {
+  font: var(--fa-font-solid);
+  content: "\f57b";
 }
